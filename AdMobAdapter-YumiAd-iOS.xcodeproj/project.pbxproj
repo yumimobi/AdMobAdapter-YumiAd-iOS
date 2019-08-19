@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		6D2698F5230A98A700BD1548 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2698F4230A98A700BD1548 /* main.m */; };
 		6D2698FF230A98A700BD1548 /* AdMobAdapter_YumiAd_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2698FE230A98A700BD1548 /* AdMobAdapter_YumiAd_iOSTests.m */; };
 		6D26990A230A98A700BD1548 /* AdMobAdapter_YumiAd_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269909230A98A700BD1548 /* AdMobAdapter_YumiAd_iOSUITests.m */; };
+		F1AE6D7D0DC7BC32258ECA27 /* Pods_AdMobAdapter_YumiAd_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88091A91C71A150D67974E88 /* Pods_AdMobAdapter_YumiAd_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13B090FB1F142AEF128128B1 /* Pods-AdMobAdapter-YumiAd-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMobAdapter-YumiAd-iOS.debug.xcconfig"; path = "Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		6D2698DF230A98A400BD1548 /* AdMobAdapter-YumiAd-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdMobAdapter-YumiAd-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2698E2230A98A400BD1548 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D2698E3230A98A400BD1548 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		6D269905230A98A700BD1548 /* AdMobAdapter-YumiAd-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AdMobAdapter-YumiAd-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D269909230A98A700BD1548 /* AdMobAdapter_YumiAd_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdMobAdapter_YumiAd_iOSUITests.m; sourceTree = "<group>"; };
 		6D26990B230A98A700BD1548 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88091A91C71A150D67974E88 /* Pods_AdMobAdapter_YumiAd_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMobAdapter_YumiAd_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3308AE9DC7EA50C08F03801 /* Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig"; path = "Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1AE6D7D0DC7BC32258ECA27 /* Pods_AdMobAdapter_YumiAd_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E895CB57F5048492F99C0D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13B090FB1F142AEF128128B1 /* Pods-AdMobAdapter-YumiAd-iOS.debug.xcconfig */,
+				A3308AE9DC7EA50C08F03801 /* Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2AA7E130759C86C54F82515E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88091A91C71A150D67974E88 /* Pods_AdMobAdapter_YumiAd_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D2698D6230A98A400BD1548 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +109,8 @@
 				6D2698FD230A98A700BD1548 /* AdMobAdapter-YumiAd-iOSTests */,
 				6D269908230A98A700BD1548 /* AdMobAdapter-YumiAd-iOSUITests */,
 				6D2698E0230A98A400BD1548 /* Products */,
+				1E895CB57F5048492F99C0D0 /* Pods */,
+				2AA7E130759C86C54F82515E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D26990E230A98A700BD1548 /* Build configuration list for PBXNativeTarget "AdMobAdapter-YumiAd-iOS" */;
 			buildPhases = (
+				ACF2D1921EC52DCAEE5550C8 /* [CP] Check Pods Manifest.lock */,
 				6D2698DB230A98A400BD1548 /* Sources */,
 				6D2698DC230A98A400BD1548 /* Frameworks */,
 				6D2698DD230A98A400BD1548 /* Resources */,
+				91B0C31A4EBF0F1FC80F30D4 /* [CP] Embed Pods Frameworks */,
+				EDEC8D4A891F00ACAC7656D7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91B0C31A4EBF0F1FC80F30D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACF2D1921EC52DCAEE5550C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdMobAdapter-YumiAd-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDEC8D4A891F00ACAC7656D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D2698DB230A98A400BD1548 /* Sources */ = {
@@ -437,6 +523,7 @@
 		};
 		6D26990F230A98A700BD1548 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13B090FB1F142AEF128128B1 /* Pods-AdMobAdapter-YumiAd-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +541,7 @@
 		};
 		6D269910230A98A700BD1548 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3308AE9DC7EA50C08F03801 /* Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
