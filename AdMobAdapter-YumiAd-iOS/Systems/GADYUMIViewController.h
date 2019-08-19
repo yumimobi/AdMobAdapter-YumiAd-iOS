@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GADYUMIViewController.h
 //  AdMobAdapter-YumiAd-iOS
 //
 //  Created by Michael Tang on 2019/8/19.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface GADYUMIViewController : UITableViewController
 
 
 @end

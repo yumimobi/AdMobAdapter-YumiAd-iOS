@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  GADYUMIViewController.m
 //  AdMobAdapter-YumiAd-iOS
 //
 //  Created by Michael Tang on 2019/8/19.
 //  Copyright © 2019 MichaelTang. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "GADYUMIViewController.h"
 
-@interface ViewController ()
+@interface GADYUMIViewController ()
 
 @end
 
-@implementation ViewController
+@implementation GADYUMIViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
