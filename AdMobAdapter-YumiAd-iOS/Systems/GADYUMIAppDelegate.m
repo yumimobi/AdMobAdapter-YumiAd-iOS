@@ -7,6 +7,7 @@
 //
 
 #import "GADYUMIAppDelegate.h"
+#import <GoogleMobileAds/GADMobileAds.h>
 
 @interface GADYUMIAppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[GADMobileAds sharedInstance] startWithCompletionHandler:^(GADInitializationStatus * _Nonnull status) {
+        NSLog(@"-----status = %@",status.adapterStatusesByClassName);
+    }];
+    
     return YES;
 }
 
