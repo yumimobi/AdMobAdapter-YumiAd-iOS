@@ -77,6 +77,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Zbx-k8-v45" kind="push" id="7KB-RB-7jp"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="60" id="Jij-qD-kqj">
                                         <rect key="frame" x="0.0" y="235.5" width="414" height="60"/>
@@ -218,6 +221,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUd-be-jaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2331" y="-113"/>
+        </scene>
+        <!--Reward Video Sample View Controller-->
+        <scene sceneID="LZY-ez-ChI">
+            <objects>
+                <viewController id="Zbx-k8-v45" customClass="GADYUMIRewardVideoSampleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xQP-eM-1Rd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbw-jY-J4S">
+                                <rect key="frame" x="20" y="148" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UKR-6R-IBH"/>
+                                    <constraint firstAttribute="width" constant="120" id="ZfW-cs-Zps"/>
+                                </constraints>
+                                <state key="normal" title="Load Video"/>
+                                <connections>
+                                    <action selector="handleLoadVideo:" destination="Zbx-k8-v45" eventType="touchUpInside" id="5xA-Nz-fE1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa2-au-tzc">
+                                <rect key="frame" x="274" y="148" width="120" height="40"/>
+                                <state key="normal" title="Show Video"/>
+                                <connections>
+                                    <action selector="handleShowAd:" destination="Zbx-k8-v45" eventType="touchUpInside" id="ssc-lo-Msv"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpw-NN-bsp">
+                                <rect key="frame" x="10" y="248" width="394" height="514"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qa2-au-tzc" firstAttribute="width" secondItem="Nbw-jY-J4S" secondAttribute="width" id="Bmc-Um-aWC"/>
+                            <constraint firstItem="jv0-0w-9Jx" firstAttribute="bottom" secondItem="kpw-NN-bsp" secondAttribute="bottom" constant="100" id="DwL-85-Dsb"/>
+                            <constraint firstItem="jv0-0w-9Jx" firstAttribute="trailing" secondItem="Qa2-au-tzc" secondAttribute="trailing" constant="20" id="QYq-YI-8AN"/>
+                            <constraint firstItem="Nbw-jY-J4S" firstAttribute="leading" secondItem="jv0-0w-9Jx" secondAttribute="leading" constant="20" id="gfq-jI-KfX"/>
+                            <constraint firstItem="jv0-0w-9Jx" firstAttribute="trailing" secondItem="kpw-NN-bsp" secondAttribute="trailing" constant="10" id="lwI-fi-r6k"/>
+                            <constraint firstItem="kpw-NN-bsp" firstAttribute="top" secondItem="Qa2-au-tzc" secondAttribute="bottom" constant="60" id="mQZ-TB-IVa"/>
+                            <constraint firstItem="Qa2-au-tzc" firstAttribute="height" secondItem="Nbw-jY-J4S" secondAttribute="height" id="po2-5W-iWK"/>
+                            <constraint firstItem="Nbw-jY-J4S" firstAttribute="top" secondItem="jv0-0w-9Jx" secondAttribute="top" constant="60" id="u20-gH-HZS"/>
+                            <constraint firstItem="kpw-NN-bsp" firstAttribute="leading" secondItem="jv0-0w-9Jx" secondAttribute="leading" constant="10" id="zlm-UI-lRU"/>
+                            <constraint firstItem="Qa2-au-tzc" firstAttribute="centerY" secondItem="Nbw-jY-J4S" secondAttribute="centerY" id="zxc-6D-NDh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jv0-0w-9Jx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Opk-yu-dbO"/>
+                    <connections>
+                        <outlet property="logTextView" destination="kpw-NN-bsp" id="LjT-5U-6wf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zek-Wm-NMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837.68115942029" y="7.3660714285714279"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9wL-YR-XiE">
