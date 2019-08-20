@@ -18,8 +18,8 @@
 	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
 	<string>20190819</string>
-	<key>GADIsAdManagerApp</key>
-	<true/>
+    <key>GADApplicationIdentifier</key>
+    <string>ca-app-pub-9636835407493045~4230019358</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -43,5 +43,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
