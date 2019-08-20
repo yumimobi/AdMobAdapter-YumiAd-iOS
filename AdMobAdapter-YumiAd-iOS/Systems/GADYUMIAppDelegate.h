@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  GADYUMIAppDelegate.h
 //  AdMobAdapter-YumiAd-iOS
 //
 //  Created by Michael Tang on 2019/8/19.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface GADYUMIAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

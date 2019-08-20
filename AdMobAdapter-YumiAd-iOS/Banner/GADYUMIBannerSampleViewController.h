@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GADYUMIBannerSampleViewController.h
 //  AdMobAdapter-YumiAd-iOS
 //
 //  Created by Michael Tang on 2019/8/19.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface GADYUMIBannerSampleViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

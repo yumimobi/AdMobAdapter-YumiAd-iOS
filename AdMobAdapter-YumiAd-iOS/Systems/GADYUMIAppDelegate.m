@@ -1,22 +1,28 @@
 //
-//  AppDelegate.m
+//  GADYUMIAppDelegate.m
 //  AdMobAdapter-YumiAd-iOS
 //
 //  Created by Michael Tang on 2019/8/19.
 //  Copyright © 2019 MichaelTang. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "GADYUMIAppDelegate.h"
+#import <GoogleMobileAds/GADMobileAds.h>
 
-@interface AppDelegate ()
+@interface GADYUMIAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation GADYUMIAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[GADMobileAds sharedInstance] startWithCompletionHandler:^(GADInitializationStatus * _Nonnull status) {
+        NSLog(@"-----status = %@",status.adapterStatusesByClassName);
+    }];
+    
     return YES;
 }
 

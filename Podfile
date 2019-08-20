@@ -5,5 +5,7 @@ target 'AdMobAdapter-YumiAd-iOS' do
   use_frameworks!
   pod 'YumiAdSDK'
   pod 'Google-Mobile-Ads-SDK'
-
+  
+  pod 'GoogleMobileAdsMediationTestSuite'
+  
 end
