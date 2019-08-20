@@ -16,6 +16,8 @@
 		6D26990A230A98A700BD1548 /* AdMobAdapter_YumiAd_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269909230A98A700BD1548 /* AdMobAdapter_YumiAd_iOSUITests.m */; };
 		6D269925230AA11600BD1548 /* GADYUMIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269921230AA11600BD1548 /* GADYUMIAppDelegate.m */; };
 		6D269926230AA11600BD1548 /* GADYUMIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269924230AA11600BD1548 /* GADYUMIViewController.m */; };
+		6D269929230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269928230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.m */; };
+		6D26992C230AAD0600BD1548 /* GADYUMICustomEventBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D26992B230AAD0600BD1548 /* GADYUMICustomEventBanner.m */; };
 		F1AE6D7D0DC7BC32258ECA27 /* Pods_AdMobAdapter_YumiAd_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88091A91C71A150D67974E88 /* Pods_AdMobAdapter_YumiAd_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,10 @@
 		6D269922230AA11600BD1548 /* GADYUMIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADYUMIViewController.h; sourceTree = "<group>"; };
 		6D269923230AA11600BD1548 /* GADYUMIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADYUMIAppDelegate.h; sourceTree = "<group>"; };
 		6D269924230AA11600BD1548 /* GADYUMIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GADYUMIViewController.m; sourceTree = "<group>"; };
+		6D269927230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADYUMIBannerSampleViewController.h; sourceTree = "<group>"; };
+		6D269928230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADYUMIBannerSampleViewController.m; sourceTree = "<group>"; };
+		6D26992A230AAD0600BD1548 /* GADYUMICustomEventBanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADYUMICustomEventBanner.h; sourceTree = "<group>"; };
+		6D26992B230AAD0600BD1548 /* GADYUMICustomEventBanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADYUMICustomEventBanner.m; sourceTree = "<group>"; };
 		88091A91C71A150D67974E88 /* Pods_AdMobAdapter_YumiAd_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMobAdapter_YumiAd_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3308AE9DC7EA50C08F03801 /* Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig"; path = "Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +168,10 @@
 		6D269917230AA10300BD1548 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
+				6D269927230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.h */,
+				6D269928230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.m */,
+				6D26992A230AAD0600BD1548 /* GADYUMICustomEventBanner.h */,
+				6D26992B230AAD0600BD1548 /* GADYUMICustomEventBanner.m */,
 			);
 			path = Banner;
 			sourceTree = "<group>";
@@ -384,9 +394,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D26992C230AAD0600BD1548 /* GADYUMICustomEventBanner.m in Sources */,
 				6D269925230AA11600BD1548 /* GADYUMIAppDelegate.m in Sources */,
 				6D269926230AA11600BD1548 /* GADYUMIViewController.m in Sources */,
 				6D2698ED230A98A400BD1548 /* AdMobAdapter_YumiAd_iOS.xcdatamodeld in Sources */,
+				6D269929230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.m in Sources */,
 				6D2698F5230A98A700BD1548 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
