@@ -57,6 +57,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="GYv-Hu-1tm" kind="push" id="RXQ-YI-ezl"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="iC6-od-Pju" rowHeight="60" style="IBUITableViewCellStyleDefault" id="OBY-gn-zxf">
                                         <rect key="frame" x="0.0" y="175.5" width="414" height="60"/>
@@ -158,6 +161,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qM2-sB-A44" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1600.0000000000002" y="-92.410714285714278"/>
+        </scene>
+        <!--Interstitial Sample View Controller-->
+        <scene sceneID="hTk-wb-UdF">
+            <objects>
+                <viewController id="GYv-Hu-1tm" customClass="GADYUMIInterstitialSampleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ld-Gf-4IM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="753-SV-cKl">
+                                <rect key="frame" x="20" y="148" width="130" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="1mn-Jc-9mh"/>
+                                    <constraint firstAttribute="height" constant="40" id="fwo-hn-zmY"/>
+                                </constraints>
+                                <state key="normal" title="Load Interstitial"/>
+                                <connections>
+                                    <action selector="handleLoadAd:" destination="GYv-Hu-1tm" eventType="touchUpInside" id="3QB-CK-ovx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0v-nV-Sc3">
+                                <rect key="frame" x="264" y="148" width="130" height="40"/>
+                                <state key="normal" title="Present Interstitial"/>
+                                <connections>
+                                    <action selector="handlePresentAd:" destination="GYv-Hu-1tm" eventType="touchUpInside" id="iQV-3H-cW5"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiG-WL-hFv">
+                                <rect key="frame" x="10" y="248" width="394" height="514"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j0v-nV-Sc3" firstAttribute="centerY" secondItem="753-SV-cKl" secondAttribute="centerY" id="0ig-ov-Puy"/>
+                            <constraint firstItem="PQj-2b-yvF" firstAttribute="bottom" secondItem="XiG-WL-hFv" secondAttribute="bottom" constant="100" id="7NR-GC-pBP"/>
+                            <constraint firstItem="PQj-2b-yvF" firstAttribute="trailing" secondItem="XiG-WL-hFv" secondAttribute="trailing" constant="10" id="9fk-d1-l3v"/>
+                            <constraint firstItem="XiG-WL-hFv" firstAttribute="top" secondItem="753-SV-cKl" secondAttribute="bottom" constant="60" id="J8l-bb-9Fe"/>
+                            <constraint firstItem="j0v-nV-Sc3" firstAttribute="height" secondItem="753-SV-cKl" secondAttribute="height" id="OV2-04-INf"/>
+                            <constraint firstItem="j0v-nV-Sc3" firstAttribute="width" secondItem="753-SV-cKl" secondAttribute="width" id="Rpj-e7-AsM"/>
+                            <constraint firstItem="PQj-2b-yvF" firstAttribute="trailing" secondItem="j0v-nV-Sc3" secondAttribute="trailing" constant="20" id="k4L-xx-gSf"/>
+                            <constraint firstItem="753-SV-cKl" firstAttribute="top" secondItem="PQj-2b-yvF" secondAttribute="top" constant="60" id="q0J-KC-gKq"/>
+                            <constraint firstItem="753-SV-cKl" firstAttribute="leading" secondItem="PQj-2b-yvF" secondAttribute="leading" constant="20" id="qsg-ml-VUQ"/>
+                            <constraint firstItem="XiG-WL-hFv" firstAttribute="leading" secondItem="PQj-2b-yvF" secondAttribute="leading" constant="10" id="qyt-Jo-3fa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQj-2b-yvF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="shd-5Z-zGX"/>
+                    <connections>
+                        <outlet property="logTextView" destination="XiG-WL-hFv" id="7eN-7u-LwX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUd-be-jaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2331" y="-113"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9wL-YR-XiE">
