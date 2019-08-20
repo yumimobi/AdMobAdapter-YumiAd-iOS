@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,6 +37,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="jXc-tI-3QM" kind="push" id="kLc-Zc-TPU"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="cMA-1O-38t" rowHeight="60" style="IBUITableViewCellStyleDefault" id="CdV-OX-vMn">
                                         <rect key="frame" x="0.0" y="115.5" width="414" height="60"/>
@@ -71,6 +75,29 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="60" id="Jij-qD-kqj">
+                                        <rect key="frame" x="0.0" y="235.5" width="414" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jij-qD-kqj" id="dj5-cX-3Ab">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeE-kM-7Wq">
+                                                    <rect key="frame" x="32" y="16" width="350" height="28"/>
+                                                    <state key="normal" title="Call AdMob Test Suite"/>
+                                                    <connections>
+                                                        <action selector="handleAdmobTest:" destination="p4X-M4-Ulv" eventType="touchUpInside" id="0PS-3f-JqB"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aeE-kM-7Wq" firstAttribute="top" secondItem="dj5-cX-3Ab" secondAttribute="topMargin" constant="5" id="4bg-O5-nkp"/>
+                                                <constraint firstItem="aeE-kM-7Wq" firstAttribute="leading" secondItem="dj5-cX-3Ab" secondAttribute="leadingMargin" constant="12" id="Eop-ob-gE1"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="aeE-kM-7Wq" secondAttribute="bottom" constant="5" id="MDz-TP-g1d"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aeE-kM-7Wq" secondAttribute="trailing" constant="12" id="VGK-GD-e8N"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -83,7 +110,54 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OP7-s5-0jL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="584" y="-28"/>
+            <point key="canvasLocation" x="582.60869565217399" y="-28.125"/>
+        </scene>
+        <!--Banner Sample View Controller-->
+        <scene sceneID="zhf-FL-VN8">
+            <objects>
+                <viewController id="jXc-tI-3QM" customClass="GADYUMIBannerSampleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BuQ-dC-lfH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ags-ut-0h4">
+                                <rect key="frame" x="20" y="148" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4XD-oO-ii4"/>
+                                    <constraint firstAttribute="height" constant="40" id="Pgf-1b-T47"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Load Banner"/>
+                                <connections>
+                                    <action selector="handleLoadBanner:" destination="jXc-tI-3QM" eventType="touchUpInside" id="Zhh-9u-f0D"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPM-Se-r5Q">
+                                <rect key="frame" x="10" y="248" width="394" height="514"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rPM-Se-r5Q" firstAttribute="top" secondItem="ags-ut-0h4" secondAttribute="bottom" constant="60" id="Hri-zo-ncW"/>
+                            <constraint firstItem="V1G-5P-rb3" firstAttribute="trailing" secondItem="rPM-Se-r5Q" secondAttribute="trailing" constant="10" id="LxN-D6-lET"/>
+                            <constraint firstItem="ags-ut-0h4" firstAttribute="leading" secondItem="V1G-5P-rb3" secondAttribute="leading" constant="20" id="N51-FB-asb"/>
+                            <constraint firstItem="V1G-5P-rb3" firstAttribute="bottom" secondItem="rPM-Se-r5Q" secondAttribute="bottom" constant="100" id="SKZ-Mg-CGd"/>
+                            <constraint firstItem="ags-ut-0h4" firstAttribute="top" secondItem="V1G-5P-rb3" secondAttribute="top" constant="60" id="dc6-s3-3LX"/>
+                            <constraint firstItem="rPM-Se-r5Q" firstAttribute="leading" secondItem="V1G-5P-rb3" secondAttribute="leading" constant="10" id="gjP-QA-Z0F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V1G-5P-rb3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vjo-7a-fhI"/>
+                    <connections>
+                        <outlet property="logTextView" destination="rPM-Se-r5Q" id="jzS-MT-iFz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qM2-sB-A44" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600.0000000000002" y="-92.410714285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9wL-YR-XiE">
