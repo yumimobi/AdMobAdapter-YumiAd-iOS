@@ -9,6 +9,8 @@
 #import "GADYUMICustomEventRewardVideo.h"
 #import <YumiAdSDK/YumiMediationVideo.h>
 
+static NSString *adapterVersion = @"1.1.1";
+
 @interface GADYUMICustomEventRewardVideo ()<GADMediationRewardedAd,YumiMediationVideoDelegate>
 
 @property (nonatomic,weak) id<GADMediationRewardedAdEventDelegate> delegate;
@@ -26,7 +28,7 @@
 }
 
 + (GADVersionNumber)adSDKVersion {
-    NSString *versionString = @"1.1.1";
+    NSString *versionString = adapterVersion;
     NSArray *versionComponents = [versionString componentsSeparatedByString:@"."];
     GADVersionNumber version = {0};
     if (versionComponents.count == 3) {
