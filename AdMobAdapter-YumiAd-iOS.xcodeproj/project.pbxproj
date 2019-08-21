@@ -22,6 +22,7 @@
 		6D269986230BC84F00BD1548 /* GADYUMICustomEventInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269985230BC84F00BD1548 /* GADYUMICustomEventInterstitial.m */; };
 		6D2699DD230BD94D00BD1548 /* GADYUMIRewardVideoSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2699DC230BD94D00BD1548 /* GADYUMIRewardVideoSampleViewController.m */; };
 		6D269A34230BE08000BD1548 /* GADYUMICustomEventRewardVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269A33230BE08000BD1548 /* GADYUMICustomEventRewardVideo.m */; };
+		6D269ADF230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269ADE230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.m */; };
 		F1AE6D7D0DC7BC32258ECA27 /* Pods_AdMobAdapter_YumiAd_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88091A91C71A150D67974E88 /* Pods_AdMobAdapter_YumiAd_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,8 @@
 		6D2699DC230BD94D00BD1548 /* GADYUMIRewardVideoSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADYUMIRewardVideoSampleViewController.m; sourceTree = "<group>"; };
 		6D269A32230BE08000BD1548 /* GADYUMICustomEventRewardVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADYUMICustomEventRewardVideo.h; sourceTree = "<group>"; };
 		6D269A33230BE08000BD1548 /* GADYUMICustomEventRewardVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADYUMICustomEventRewardVideo.m; sourceTree = "<group>"; };
+		6D269ADD230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADYUMICustomEventRewardBasedVideo.h; sourceTree = "<group>"; };
+		6D269ADE230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADYUMICustomEventRewardBasedVideo.m; sourceTree = "<group>"; };
 		88091A91C71A150D67974E88 /* Pods_AdMobAdapter_YumiAd_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMobAdapter_YumiAd_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3308AE9DC7EA50C08F03801 /* Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig"; path = "Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,6 +198,8 @@
 				6D2699DC230BD94D00BD1548 /* GADYUMIRewardVideoSampleViewController.m */,
 				6D269A32230BE08000BD1548 /* GADYUMICustomEventRewardVideo.h */,
 				6D269A33230BE08000BD1548 /* GADYUMICustomEventRewardVideo.m */,
+				6D269ADD230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.h */,
+				6D269ADE230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.m */,
 			);
 			path = "Reward Video";
 			sourceTree = "<group>";
@@ -417,6 +422,7 @@
 				6D269986230BC84F00BD1548 /* GADYUMICustomEventInterstitial.m in Sources */,
 				6D26992C230AAD0600BD1548 /* GADYUMICustomEventBanner.m in Sources */,
 				6D269925230AA11600BD1548 /* GADYUMIAppDelegate.m in Sources */,
+				6D269ADF230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.m in Sources */,
 				6D269983230BC82E00BD1548 /* GADYUMIInterstitialSampleViewController.m in Sources */,
 				6D269926230AA11600BD1548 /* GADYUMIViewController.m in Sources */,
 				6D2698ED230A98A400BD1548 /* AdMobAdapter_YumiAd_iOS.xcdatamodeld in Sources */,
