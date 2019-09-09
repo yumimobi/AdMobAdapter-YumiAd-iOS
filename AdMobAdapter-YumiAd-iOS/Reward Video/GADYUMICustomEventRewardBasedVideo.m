@@ -1,58 +1,58 @@
 //
-//  GADYUMICustomEventRewardVideo.m
+//  GADYUMICustomEventRewardBasedVideo.m
 //  AdMobAdapter-YumiAd-iOS
 //
-//  Created by Michael Tang on 2019/8/20.
+//  Created by Michael Tang on 2019/8/21.
 //  Copyright © 2019 MichaelTang. All rights reserved.
 //
 
-#import "GADYUMICustomEventRewardVideo.h"
+#import "GADYUMICustomEventRewardBasedVideo.h"
 #import <YumiAdSDK/YumiMediationVideo.h>
 
-static NSString *adapterVersion = @"1.1.1";
+static NSString *adapterVersionString = @"1.1.1";
 
-@interface GADYUMICustomEventRewardVideo ()<GADMediationRewardedAd,YumiMediationVideoDelegate>
+@interface GADYUMICustomEventRewardBasedVideo ()<YumiMediationVideoDelegate>
 
-@property (nonatomic,weak) id<GADMediationRewardedAdEventDelegate> delegate;
-@property (nonatomic,copy) GADMediationRewardedLoadCompletionHandler adLoadCompletionHandler;
+@property (nonatomic,weak) id<GADMRewardBasedVideoAdNetworkConnector> connector;
 @property (nonatomic) YumiMediationVideo *rewardVideo;
 
 @end
 
-@implementation GADYUMICustomEventRewardVideo
+@implementation GADYUMICustomEventRewardBasedVideo
 
-#pragma mark: GADMediationAdapter
+#pragma mark: GADMRewardBasedVideoAdNetworkAdapter
 
-+ (nullable Class<GADAdNetworkExtras>)networkExtrasClass {
-    return Nil;
++ (NSString *)adapterVersion {
+    return adapterVersionString;
 }
 
-+ (GADVersionNumber)adSDKVersion {
-    NSString *versionString = adapterVersion;
-    NSArray *versionComponents = [versionString componentsSeparatedByString:@"."];
-    GADVersionNumber version = {0};
-    if (versionComponents.count == 3) {
-        version.majorVersion = [versionComponents[0] integerValue];
-        version.minorVersion = [versionComponents[1] integerValue];
-        version.patchVersion = [versionComponents[2] integerValue];
+- (instancetype)initWithRewardBasedVideoAdNetworkConnector:(id<GADMRewardBasedVideoAdNetworkConnector>)connector {
+    
+    if (!connector) {
+        return nil;
     }
-    return version;
+    
+    self = [super init];
+    
+    if (self) {
+        self.connector = connector;
+    }
+    
+    return self;
+    
 }
 
-+ (GADVersionNumber)version {
-    return [self adSDKVersion];
++ (Class<GADAdNetworkExtras>)networkExtrasClass {
+    return nil;
 }
 
-+ (void)setUpWithConfiguration:(GADMediationServerConfiguration *)configuration
-             completionHandler:(GADMediationAdapterSetUpCompletionBlock)completionHandler {
-    completionHandler(nil);
+- (void)setUp {
+    [self.connector adapterDidSetUpRewardBasedVideoAd:self];
 }
 
-- (void)loadRewardedAdForAdConfiguration:(GADMediationRewardedAdConfiguration *)adConfiguration
-                       completionHandler:(GADMediationRewardedLoadCompletionHandler)completionHandler {
-    NSString *adUnitParameters = adConfiguration.credentials.settings[@"parameter"];
-   
-    NSDictionary *paramterDict = [self dictionaryWithJsonString:adUnitParameters];
+- (void)requestRewardBasedVideoAd {
+    
+    NSDictionary *paramterDict = [self dictionaryWithJsonString:[self.connector credentials][@"parameter"]];
     
     NSCAssert(paramterDict, @"Yumi paramter is invalid，please check yumi adapter config");
     
@@ -60,18 +60,22 @@ static NSString *adapterVersion = @"1.1.1";
     NSString *channelId = paramterDict[@"channelId"];
     NSString *versionId = paramterDict[@"versionId"];
     
-    self.adLoadCompletionHandler = completionHandler;
-    
     self.rewardVideo = [YumiMediationVideo sharedInstance];
     self.rewardVideo.delegate = self;
     // set coreLogicInstance state is init
     [[self.rewardVideo valueForKey:@"coreLogicInstance"] setValue:@(0) forKey:@"state"];
     
     [self.rewardVideo loadAdWithPlacementID:placementId channelID:channelId versionID:versionId];
+    
 }
 
-- (void)presentFromViewController:(nonnull UIViewController *)viewController {
+- (void)presentRewardBasedVideoAdWithRootViewController:(UIViewController *)viewController {
     [self.rewardVideo presentFromRootViewController:viewController];
+}
+
+- (void)stopBeingDelegate {
+    self.rewardVideo.delegate = nil;
+    self.rewardVideo = nil;
 }
 
 #pragma mark: private
@@ -94,53 +98,50 @@ static NSString *adapterVersion = @"1.1.1";
 #pragma mark: YumiMediationVideoDelegate
 /// Tells the delegate that the video ad was received.
 - (void)yumiMediationVideoDidReceiveAd:(YumiMediationVideo *)video {
-    self.delegate = self.adLoadCompletionHandler(self,nil);
+    [self.connector adapterDidReceiveRewardBasedVideoAd:self];
 }
 
 /// Tells the delegate that the video ad failed to load.
 - (void)yumiMediationVideo:(YumiMediationVideo *)video didFailToLoadWithError:(NSError *)error {
-    self.adLoadCompletionHandler(self,error);
+    [self.connector adapter:self didFailToLoadRewardBasedVideoAdwithError:error];
 }
 
 /// Tells the delegate that the video ad failed to show.
 - (void)yumiMediationVideo:(YumiMediationVideo *)video didFailToShowWithError:(NSError *)error {
-    [self.delegate didFailToPresentWithError:error];
+    
 }
 
 /// Tells the delegate that the video ad opened.
 - (void)yumiMediationVideoDidOpen:(YumiMediationVideo *)video {
-    [self.delegate willPresentFullScreenView];
-    [self.delegate reportImpression];
+    [self.connector adapterDidOpenRewardBasedVideoAd:self];
 }
 
 /// Tells the delegate that the video ad start playing.
 - (void)yumiMediationVideoDidStartPlaying:(YumiMediationVideo *)video {
-    [self.delegate didStartVideo];
+    [self.connector adapterDidStartPlayingRewardBasedVideoAd:self];
 }
 
 /// Tells the delegate that the video ad closed.
 /// You can learn about the reward info by examining the ‘isRewarded’ value
 - (void)yumiMediationVideoDidClosed:(YumiMediationVideo *)video isRewarded:(BOOL)isRewarded {
-   
+    
     if (isRewarded) {
-        [self.delegate didEndVideo];
+        [self.connector adapterDidCompletePlayingRewardBasedVideoAd:self];
     }
-   
-    [self.delegate willDismissFullScreenView];
-    [self.delegate didDismissFullScreenView];
+    [self.connector adapterDidCloseRewardBasedVideoAd:self];
 }
 
 /// Tells the delegate that the video ad has rewarded the user.
 - (void)yumiMediationVideoDidReward:(YumiMediationVideo *)video {
     GADAdReward *reward = [[GADAdReward alloc] initWithRewardType:@"Yumi reward video"
-                               rewardAmount:[NSDecimalNumber decimalNumberWithString:@"1"]];
+                                                     rewardAmount:[NSDecimalNumber decimalNumberWithString:@"1"]];
     
-    [self.delegate didRewardUserWithReward:reward];
+    [self.connector adapter:self didRewardUserWithReward:reward];
 }
 
 /// Tells the delegate that the reward video ad has been clicked by the person.
 - (void)yumiMediationVideoDidClick:(YumiMediationVideo *)video {
-    [self.delegate reportClick];
+    [self.connector adapterDidGetAdClick:self];
 }
 
 @end
