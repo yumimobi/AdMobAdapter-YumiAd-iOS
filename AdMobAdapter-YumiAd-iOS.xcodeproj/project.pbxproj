@@ -601,9 +601,10 @@
 			baseConfigurationReference = 13B090FB1F142AEF128128B1 /* Pods-AdMobAdapter-YumiAd-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 20190919;
-				DEVELOPMENT_TEAM = VG25A6M88T;
+				DEVELOPMENT_TEAM = L5UE3EGW93;
 				INFOPLIST_FILE = "AdMobAdapter-YumiAd-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -611,8 +612,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yumi.AdMobAdapter-YumiAd-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.popstar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Dis;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -622,9 +624,10 @@
 			baseConfigurationReference = A3308AE9DC7EA50C08F03801 /* Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 20190919;
-				DEVELOPMENT_TEAM = VG25A6M88T;
+				DEVELOPMENT_TEAM = L5UE3EGW93;
 				INFOPLIST_FILE = "AdMobAdapter-YumiAd-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -632,8 +635,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yumi.AdMobAdapter-YumiAd-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.popstar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Dis;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
