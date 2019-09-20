@@ -8,6 +8,6 @@ target 'AdMobAdapter-YumiAd-iOS' do
   pod 'YumiAdSDK'
   pod 'Google-Mobile-Ads-SDK'
   
-  pod 'GoogleMobileAdsMediationTestSuite'
+  pod 'GoogleMobileAdsMediationTestSuite', '1.0.0'
   
 end
