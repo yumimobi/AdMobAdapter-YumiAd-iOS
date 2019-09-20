@@ -8,7 +8,6 @@
 
 #import "GADYUMICustomEventInterstitial.h"
 #import <YumiAdSDK/YumiMediationInterstitial.h>
-#import <YumiAdSDK/YumiTool.h>
 
 @interface GADYUMICustomEventInterstitial ()<YumiMediationInterstitialDelegate>
 
@@ -32,13 +31,13 @@
     NSString *placementId = paramterDict[@"placementId"];
     NSString *channelId = paramterDict[@"channelId"];
     NSString *versionId = paramterDict[@"versionId"];
-    self.interstitial = [[YumiMediationInterstitial alloc] initWithPlacementID:placementId channelID:channelId versionID:versionId rootViewController:[[YumiTool sharedTool] topMostController]];
+    self.interstitial = [[YumiMediationInterstitial alloc] initWithPlacementID:placementId channelID:channelId versionID:versionId];
     self.interstitial.delegate = self;
     
 }
 
 - (void)presentFromRootViewController:(nonnull UIViewController *)rootViewController {
-    [self.interstitial present];
+    [self.interstitial presentFromRootViewController:nil];
 }
 
 #pragma mark: private
