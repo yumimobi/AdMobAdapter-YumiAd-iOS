@@ -7,11 +7,11 @@ PODS:
     - GoogleUtilities/Network (~> 6.0)
     - "GoogleUtilities/NSData+zlib (~> 6.0)"
     - nanopb (~> 0.3)
-  - GoogleMobileAdsMediationTestSuite (1.1.0):
+  - GoogleMobileAdsMediationTestSuite (1.0.0):
     - Google-Mobile-Ads-SDK (>= 7.10.1)
-    - MaterialComponents/Cards (~> 76.1)
-    - MaterialComponents/Dialogs (~> 76.1)
-    - MaterialComponents/Tabs (~> 76.1)
+    - MaterialComponents/Cards (~> 76.0)
+    - MaterialComponents/Dialogs (~> 76.0)
+    - MaterialComponents/Tabs (~> 76.0)
   - GoogleUtilities/AppDelegateSwizzler (6.3.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -88,7 +88,7 @@ PODS:
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
-  - GoogleMobileAdsMediationTestSuite
+  - GoogleMobileAdsMediationTestSuite (= 1.0.0)
   - YumiAdSDK
 
 SPEC REPOS:
@@ -107,7 +107,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: d48dbaf5bae1ab7a94a9786f493c26c454bc6f16
   GoogleAppMeasurement: 86a82f0e1f20b8eedf8e20326530138fd71409de
-  GoogleMobileAdsMediationTestSuite: 9776316cd4700df59a5b0b0b0ceb2ce545bfd131
+  GoogleMobileAdsMediationTestSuite: 5fa71a97dd0be6e45a98d12ffd78ff0829051cd6
   GoogleUtilities: 9c2c544202301110b29f7974a82e77fdcf12bf51
   MaterialComponents: 1aef341d47fbaed37ddb5163a01af94cb6da8506
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
@@ -115,6 +115,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   YumiAdSDK: a46b1cc501b219927b94f0bf4112b89c6034288f
 
-PODFILE CHECKSUM: 6d4ee90b5a58888240dbb7fa67b21ef22a029720
+PODFILE CHECKSUM: acdaad127e151d16146924c8fe7353ab5c4b94fb
 
 COCOAPODS: 1.7.5
