@@ -9,7 +9,7 @@
 #import "GADYUMICustomEventRewardBasedVideo.h"
 #import <YumiAdSDK/YumiMediationVideo.h>
 
-static NSString *adapterVersionString = @"1.1.1";
+static NSString *adapterVersionString = @"1.2.0";
 
 @interface GADYUMICustomEventRewardBasedVideo ()<YumiMediationVideoDelegate>
 
