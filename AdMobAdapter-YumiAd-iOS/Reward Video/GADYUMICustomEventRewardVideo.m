@@ -9,7 +9,7 @@
 #import "GADYUMICustomEventRewardVideo.h"
 #import <YumiAdSDK/YumiMediationVideo.h>
 
-static NSString *adapterVersion = @"1.1.1";
+static NSString *adapterVersion = @"1.2.0";
 
 @interface GADYUMICustomEventRewardVideo ()<GADMediationRewardedAd,YumiMediationVideoDelegate>
 
@@ -80,7 +80,7 @@ static NSString *adapterVersion = @"1.1.1";
         return nil;
     }
     NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-    NSError *err;
+    NSError *err = nil;
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
                                                         options:NSJSONReadingMutableContainers
                                                           error:&err];
