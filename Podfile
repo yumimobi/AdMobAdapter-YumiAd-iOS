@@ -5,8 +5,7 @@ platform :ios, '8.0'
 
 target 'AdMobAdapter-YumiAd-iOS' do
   use_frameworks!
-  pod 'YumiAdSDKAdapterAdmob', '4.3.4.100'
-  pod 'Google-Mobile-Ads-SDK'
+  pod 'GoogleMobileAdsMediationYumiAds', '4.4.1.000'
   
   pod 'GoogleMobileAdsMediationTestSuite', '1.0.0'
   
