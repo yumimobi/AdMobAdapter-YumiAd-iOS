@@ -12,6 +12,9 @@ PODS:
     - MaterialComponents/Cards (~> 76.0)
     - MaterialComponents/Dialogs (~> 76.0)
     - MaterialComponents/Tabs (~> 76.0)
+  - GoogleMobileAdsMediationYumiAds (4.4.1.000):
+    - Google-Mobile-Ads-SDK
+    - YumiAdSDK (= 4.4.1.000)
   - GoogleUtilities/AppDelegateSwizzler (6.3.2):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -84,12 +87,15 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
-  - YumiAdSDK (4.3.4.100)
+  - YumiAdSDK (4.4.1.000)
+  - YumiAdSDKAdapterAdmob (4.4.1.000):
+    - Google-Mobile-Ads-SDK
+    - YumiAdSDK (= 4.4.1.000)
 
 DEPENDENCIES:
-  - Google-Mobile-Ads-SDK
   - GoogleMobileAdsMediationTestSuite (= 1.0.0)
-  - YumiAdSDK (= 4.3.4.100)
+  - GoogleMobileAdsMediationYumiAds (= 4.4.1.000)
+  - YumiAdSDKAdapterAdmob (= 4.4.1.000)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -102,19 +108,23 @@ SPEC REPOS:
     - MDFTextAccessibility
     - nanopb
   https://github.com/yumimobi/Specs.git:
+    - GoogleMobileAdsMediationYumiAds
     - YumiAdSDK
+    - YumiAdSDKAdapterAdmob
 
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 62f6244637306cb60a1b4adda067f53224c7a860
   GoogleAppMeasurement: dfe55efa543e899d906309eaaac6ca26d249862f
   GoogleMobileAdsMediationTestSuite: 5fa71a97dd0be6e45a98d12ffd78ff0829051cd6
+  GoogleMobileAdsMediationYumiAds: 7bcc9f818d10842b1357255f2399f62639fcd9c0
   GoogleUtilities: 547a86735c6f0ee30ad17e94df4fc21f616b71cb
   MaterialComponents: 1aef341d47fbaed37ddb5163a01af94cb6da8506
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
-  YumiAdSDK: bca7a4872b14f0ae1152921d9946c286ad596440
+  YumiAdSDK: f3024fd4d2909073e9db330319ad2193d248235e
+  YumiAdSDKAdapterAdmob: f0f7cb4daaa7d8069e37328d5cc7660e6cec2e58
 
-PODFILE CHECKSUM: 9ca5b73abbab89f52c12a2605260c6ec267a8059
+PODFILE CHECKSUM: 28403759adcb1988fe1868b395129a787b756c3f
 
 COCOAPODS: 1.8.4
