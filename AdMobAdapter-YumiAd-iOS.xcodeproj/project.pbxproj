@@ -193,8 +193,8 @@
 				6D2698DB230A98A400BD1548 /* Sources */,
 				6D2698DC230A98A400BD1548 /* Frameworks */,
 				6D2698DD230A98A400BD1548 /* Resources */,
-				46CF9675F057A54CF7139E3D /* [CP] Embed Pods Frameworks */,
-				F00432E83A3526BEE327DA45 /* [CP] Copy Pods Resources */,
+				7C6E0ED0552EEBC5DA1493A0 /* [CP] Embed Pods Frameworks */,
+				8092F621C8871FF6EC752E2F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,7 +312,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		46CF9675F057A54CF7139E3D /* [CP] Embed Pods Frameworks */ = {
+		7C6E0ED0552EEBC5DA1493A0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,6 +327,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8092F621C8871FF6EC752E2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ACF2D1921EC52DCAEE5550C8 /* [CP] Check Pods Manifest.lock */ = {
@@ -349,23 +366,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F00432E83A3526BEE327DA45 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
