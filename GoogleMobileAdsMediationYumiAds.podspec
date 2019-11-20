@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = "GoogleMobileAdsMediationZplayAds"
+  s.name = "GoogleMobileAdsMediationYumiAds"
   s.version = "4.4.1.000"
   s.summary = "YumiAds adapter used for mediation with the Google Mobile Ads SDK"
   s.license = "Custom"
