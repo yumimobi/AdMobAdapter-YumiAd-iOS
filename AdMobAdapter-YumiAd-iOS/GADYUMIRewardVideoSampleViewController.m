@@ -26,7 +26,7 @@
 
 - (IBAction)handleLoadVideo:(UIButton *)sender {
     self.rewardedAd = [[GADRewardedAd alloc]
-                       initWithAdUnitID:@"ca-app-pub-9636835407493045/4092086851"];
+                       initWithAdUnitID:@"ca-app-pub-9454875840803246/3417853680"];
     self.rewardedAd.adMetadataDelegate = self;
     
     __weak typeof(self) weakSelf = self;
