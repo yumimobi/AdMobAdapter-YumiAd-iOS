@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "YumiAdSDKAdapterAdmob"
-  version = "4.4.1.000"
+  version = "4.5.0.000"
   s.version = version
   s.summary = "Yumi SDK."
   s.license = "Custom"
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source = {:git => 'https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS.git', :tag => s.version.to_s }
   s.ios.deployment_target    = '9.0'
   s.source_files = 'AdMobAdapter-YumiAd-iOS/YumiAdapters/**/*.{h,m}'
-  s.dependency 'YumiAdSDK','4.4.1.000'
+  s.dependency 'YumiAdSDK','4.5.0.000'
   s.dependency 'Google-Mobile-Ads-SDK'
   s.static_framework = true
 
