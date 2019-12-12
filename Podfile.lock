@@ -15,6 +15,9 @@ PODS:
   - GoogleMobileAdsMediationYumiAds (4.5.0.000):
     - Google-Mobile-Ads-SDK
     - YumiAdSDK (= 4.5.0.000)
+  - GoogleMobileAdsMediationZplayAds (2.6.0):
+    - Google-Mobile-Ads-SDK
+    - PlayableAds (~> 2.6.0)
   - GoogleUtilities/AppDelegateSwizzler (6.3.2):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -87,6 +90,7 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - PlayableAds (2.6.0)
   - YumiAdSDK (4.5.0.000)
   - YumiAdSDKAdapterAdmob (4.5.0.000):
     - Google-Mobile-Ads-SDK
@@ -95,6 +99,7 @@ PODS:
 DEPENDENCIES:
   - GoogleMobileAdsMediationTestSuite (= 1.0.0)
   - GoogleMobileAdsMediationYumiAds (= 4.5.0.000)
+  - GoogleMobileAdsMediationZplayAds (= 2.6.0)
   - YumiAdSDKAdapterAdmob (= 4.5.0.000)
 
 SPEC REPOS:
@@ -102,11 +107,13 @@ SPEC REPOS:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleMobileAdsMediationTestSuite
+    - GoogleMobileAdsMediationZplayAds
     - GoogleUtilities
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
     - nanopb
+    - PlayableAds
   https://github.com/yumimobi/Specs.git:
     - GoogleMobileAdsMediationYumiAds
     - YumiAdSDK
@@ -117,14 +124,16 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: dfe55efa543e899d906309eaaac6ca26d249862f
   GoogleMobileAdsMediationTestSuite: 5fa71a97dd0be6e45a98d12ffd78ff0829051cd6
   GoogleMobileAdsMediationYumiAds: e23bf543e02cf6928bc28b5f798202a67ea38651
+  GoogleMobileAdsMediationZplayAds: 3041b441e8a375c1076cf716c038afbc014f9e53
   GoogleUtilities: 547a86735c6f0ee30ad17e94df4fc21f616b71cb
   MaterialComponents: 1aef341d47fbaed37ddb5163a01af94cb6da8506
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
-  YumiAdSDK: baec8c9f56f52c7196839fbda17560eb02997803
+  PlayableAds: ceb019c73d7a00b371412b0324a2f0907002ec99
+  YumiAdSDK: 6874e7cc0ca8e405e1298e81ac0663d2f195fc9a
   YumiAdSDKAdapterAdmob: 3d42a25ab447297bc55f52104648ebbfc778e419
 
-PODFILE CHECKSUM: 3881a46eb6a74fc36b7aff3b60b084a7cf4269fc
+PODFILE CHECKSUM: a85e7c2ddf0163bfb40b71a57a802933a215ef9b
 
 COCOAPODS: 1.8.4
