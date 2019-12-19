@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view.
 }
 - (IBAction)handleAdmobTest:(UIButton *)sender {
-    [GoogleMobileAdsMediationTestSuite presentWithAppID:@"ca-app-pub-9636835407493045~4230019358"
+    [GoogleMobileAdsMediationTestSuite presentWithAppID:@"ca-app-pub-9454875840803246~2667523573"
                                        onViewController:self
                                                delegate:nil];
 }

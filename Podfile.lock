@@ -1,32 +1,38 @@
 PODS:
-  - Google-Mobile-Ads-SDK (7.50.0):
+  - Google-Mobile-Ads-SDK (7.52.0):
     - GoogleAppMeasurement (~> 6.0)
-  - GoogleAppMeasurement (6.1.2):
+  - GoogleAppMeasurement (6.1.6):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
     - GoogleUtilities/Network (~> 6.0)
     - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - nanopb (~> 0.3)
+    - nanopb (= 0.3.9011)
   - GoogleMobileAdsMediationTestSuite (1.0.0):
     - Google-Mobile-Ads-SDK (>= 7.10.1)
     - MaterialComponents/Cards (~> 76.0)
     - MaterialComponents/Dialogs (~> 76.0)
     - MaterialComponents/Tabs (~> 76.0)
-  - GoogleUtilities/AppDelegateSwizzler (6.3.0):
+  - GoogleMobileAdsMediationYumiAds (4.5.0.000):
+    - Google-Mobile-Ads-SDK
+    - YumiAdSDK (= 4.5.0.000)
+  - GoogleMobileAdsMediationZplayAds (2.6.0):
+    - Google-Mobile-Ads-SDK
+    - PlayableAds (~> 2.6.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.3.2):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (6.3.0)
-  - GoogleUtilities/Logger (6.3.0):
+  - GoogleUtilities/Environment (6.3.2)
+  - GoogleUtilities/Logger (6.3.2):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.3.0):
+  - GoogleUtilities/MethodSwizzler (6.3.2):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (6.3.0):
+  - GoogleUtilities/Network (6.3.2):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.3.0)"
-  - GoogleUtilities/Reachability (6.3.0):
+  - "GoogleUtilities/NSData+zlib (6.3.2)"
+  - GoogleUtilities/Reachability (6.3.2):
     - GoogleUtilities/Logger
   - MaterialComponents/AnimationTiming (76.1.2)
   - MaterialComponents/Buttons (76.1.2):
@@ -79,41 +85,55 @@ PODS:
     - MaterialComponents/private/Math
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
-  - nanopb (0.3.901):
-    - nanopb/decode (= 0.3.901)
-    - nanopb/encode (= 0.3.901)
-  - nanopb/decode (0.3.901)
-  - nanopb/encode (0.3.901)
-  - YumiAdSDK (1.2.0)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - PlayableAds (2.6.0)
+  - YumiAdSDK (4.5.0.000)
+  - YumiAdSDKAdapterAdmob (4.5.0.000):
+    - Google-Mobile-Ads-SDK
+    - YumiAdSDK (= 4.5.0.000)
 
 DEPENDENCIES:
-  - Google-Mobile-Ads-SDK
   - GoogleMobileAdsMediationTestSuite (= 1.0.0)
-  - YumiAdSDK
+  - GoogleMobileAdsMediationYumiAds (= 4.5.0.000)
+  - GoogleMobileAdsMediationZplayAds (= 2.6.0)
+  - YumiAdSDKAdapterAdmob (= 4.5.0.000)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleMobileAdsMediationTestSuite
+    - GoogleMobileAdsMediationZplayAds
     - GoogleUtilities
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
     - nanopb
+    - PlayableAds
+  https://github.com/yumimobi/Specs.git:
+    - GoogleMobileAdsMediationYumiAds
     - YumiAdSDK
+    - YumiAdSDKAdapterAdmob
 
 SPEC CHECKSUMS:
-  Google-Mobile-Ads-SDK: d48dbaf5bae1ab7a94a9786f493c26c454bc6f16
-  GoogleAppMeasurement: 0ae90be1cc4dad40f4a27fc767ef59fa032ec87b
+  Google-Mobile-Ads-SDK: 62f6244637306cb60a1b4adda067f53224c7a860
+  GoogleAppMeasurement: dfe55efa543e899d906309eaaac6ca26d249862f
   GoogleMobileAdsMediationTestSuite: 5fa71a97dd0be6e45a98d12ffd78ff0829051cd6
-  GoogleUtilities: 9c2c544202301110b29f7974a82e77fdcf12bf51
+  GoogleMobileAdsMediationYumiAds: e23bf543e02cf6928bc28b5f798202a67ea38651
+  GoogleMobileAdsMediationZplayAds: 3041b441e8a375c1076cf716c038afbc014f9e53
+  GoogleUtilities: 547a86735c6f0ee30ad17e94df4fc21f616b71cb
   MaterialComponents: 1aef341d47fbaed37ddb5163a01af94cb6da8506
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
-  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  YumiAdSDK: 7e093d8f374d8e25e4e4273f7caea5571f0b85d2
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  PlayableAds: ceb019c73d7a00b371412b0324a2f0907002ec99
+  YumiAdSDK: 6874e7cc0ca8e405e1298e81ac0663d2f195fc9a
+  YumiAdSDKAdapterAdmob: 3d42a25ab447297bc55f52104648ebbfc778e419
 
-PODFILE CHECKSUM: c63db9f57b7355dd89e7ba4299d8ed45ba4fa422
+PODFILE CHECKSUM: a85e7c2ddf0163bfb40b71a57a802933a215ef9b
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

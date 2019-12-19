@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BF87264238556720009B15E /* GADYUMIInterstitialSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF87260238556720009B15E /* GADYUMIInterstitialSampleViewController.m */; };
+		5BF87265238556720009B15E /* GADYUMIBannerSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF87262238556720009B15E /* GADYUMIBannerSampleViewController.m */; };
+		5BF87266238556720009B15E /* GADYUMIRewardVideoSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF87263238556720009B15E /* GADYUMIRewardVideoSampleViewController.m */; };
 		6D2698EA230A98A400BD1548 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2698E8230A98A400BD1548 /* Main.storyboard */; };
 		6D2698ED230A98A400BD1548 /* AdMobAdapter_YumiAd_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D2698EB230A98A400BD1548 /* AdMobAdapter_YumiAd_iOS.xcdatamodeld */; };
 		6D2698EF230A98A700BD1548 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2698EE230A98A700BD1548 /* Assets.xcassets */; };
@@ -16,13 +19,6 @@
 		6D26990A230A98A700BD1548 /* AdMobAdapter_YumiAd_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269909230A98A700BD1548 /* AdMobAdapter_YumiAd_iOSUITests.m */; };
 		6D269925230AA11600BD1548 /* GADYUMIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269921230AA11600BD1548 /* GADYUMIAppDelegate.m */; };
 		6D269926230AA11600BD1548 /* GADYUMIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269924230AA11600BD1548 /* GADYUMIViewController.m */; };
-		6D269929230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269928230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.m */; };
-		6D26992C230AAD0600BD1548 /* GADYUMICustomEventBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D26992B230AAD0600BD1548 /* GADYUMICustomEventBanner.m */; };
-		6D269983230BC82E00BD1548 /* GADYUMIInterstitialSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269982230BC82E00BD1548 /* GADYUMIInterstitialSampleViewController.m */; };
-		6D269986230BC84F00BD1548 /* GADYUMICustomEventInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269985230BC84F00BD1548 /* GADYUMICustomEventInterstitial.m */; };
-		6D2699DD230BD94D00BD1548 /* GADYUMIRewardVideoSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2699DC230BD94D00BD1548 /* GADYUMIRewardVideoSampleViewController.m */; };
-		6D269A34230BE08000BD1548 /* GADYUMICustomEventRewardVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269A33230BE08000BD1548 /* GADYUMICustomEventRewardVideo.m */; };
-		6D269ADF230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269ADE230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.m */; };
 		F1AE6D7D0DC7BC32258ECA27 /* Pods_AdMobAdapter_YumiAd_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88091A91C71A150D67974E88 /* Pods_AdMobAdapter_YumiAd_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +41,12 @@
 
 /* Begin PBXFileReference section */
 		13B090FB1F142AEF128128B1 /* Pods-AdMobAdapter-YumiAd-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMobAdapter-YumiAd-iOS.debug.xcconfig"; path = "Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5BF8725E238556710009B15E /* GADYUMIInterstitialSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADYUMIInterstitialSampleViewController.h; sourceTree = "<group>"; };
+		5BF8725F238556710009B15E /* GADYUMIBannerSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADYUMIBannerSampleViewController.h; sourceTree = "<group>"; };
+		5BF87260238556720009B15E /* GADYUMIInterstitialSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GADYUMIInterstitialSampleViewController.m; sourceTree = "<group>"; };
+		5BF87261238556720009B15E /* GADYUMIRewardVideoSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADYUMIRewardVideoSampleViewController.h; sourceTree = "<group>"; };
+		5BF87262238556720009B15E /* GADYUMIBannerSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GADYUMIBannerSampleViewController.m; sourceTree = "<group>"; };
+		5BF87263238556720009B15E /* GADYUMIRewardVideoSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GADYUMIRewardVideoSampleViewController.m; sourceTree = "<group>"; };
 		6D2698DF230A98A400BD1548 /* AdMobAdapter-YumiAd-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AdMobAdapter-YumiAd-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2698E9230A98A400BD1548 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D2698EC230A98A400BD1548 /* AdMobAdapter_YumiAd_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdMobAdapter_YumiAd_iOS.xcdatamodel; sourceTree = "<group>"; };
@@ -62,20 +64,6 @@
 		6D269922230AA11600BD1548 /* GADYUMIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADYUMIViewController.h; sourceTree = "<group>"; };
 		6D269923230AA11600BD1548 /* GADYUMIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADYUMIAppDelegate.h; sourceTree = "<group>"; };
 		6D269924230AA11600BD1548 /* GADYUMIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GADYUMIViewController.m; sourceTree = "<group>"; };
-		6D269927230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADYUMIBannerSampleViewController.h; sourceTree = "<group>"; };
-		6D269928230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADYUMIBannerSampleViewController.m; sourceTree = "<group>"; };
-		6D26992A230AAD0600BD1548 /* GADYUMICustomEventBanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADYUMICustomEventBanner.h; sourceTree = "<group>"; };
-		6D26992B230AAD0600BD1548 /* GADYUMICustomEventBanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADYUMICustomEventBanner.m; sourceTree = "<group>"; };
-		6D269981230BC82E00BD1548 /* GADYUMIInterstitialSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADYUMIInterstitialSampleViewController.h; sourceTree = "<group>"; };
-		6D269982230BC82E00BD1548 /* GADYUMIInterstitialSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADYUMIInterstitialSampleViewController.m; sourceTree = "<group>"; };
-		6D269984230BC84F00BD1548 /* GADYUMICustomEventInterstitial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADYUMICustomEventInterstitial.h; sourceTree = "<group>"; };
-		6D269985230BC84F00BD1548 /* GADYUMICustomEventInterstitial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADYUMICustomEventInterstitial.m; sourceTree = "<group>"; };
-		6D2699DB230BD94D00BD1548 /* GADYUMIRewardVideoSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADYUMIRewardVideoSampleViewController.h; sourceTree = "<group>"; };
-		6D2699DC230BD94D00BD1548 /* GADYUMIRewardVideoSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADYUMIRewardVideoSampleViewController.m; sourceTree = "<group>"; };
-		6D269A32230BE08000BD1548 /* GADYUMICustomEventRewardVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADYUMICustomEventRewardVideo.h; sourceTree = "<group>"; };
-		6D269A33230BE08000BD1548 /* GADYUMICustomEventRewardVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADYUMICustomEventRewardVideo.m; sourceTree = "<group>"; };
-		6D269ADD230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GADYUMICustomEventRewardBasedVideo.h; sourceTree = "<group>"; };
-		6D269ADE230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GADYUMICustomEventRewardBasedVideo.m; sourceTree = "<group>"; };
 		88091A91C71A150D67974E88 /* Pods_AdMobAdapter_YumiAd_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdMobAdapter_YumiAd_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3308AE9DC7EA50C08F03801 /* Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig"; path = "Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,9 +136,12 @@
 		6D2698E1230A98A400BD1548 /* AdMobAdapter-YumiAd-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6D269917230AA10300BD1548 /* Banner */,
-				6D269919230AA10300BD1548 /* Interstitial */,
-				6D269918230AA10300BD1548 /* Reward Video */,
+				5BF8725F238556710009B15E /* GADYUMIBannerSampleViewController.h */,
+				5BF87262238556720009B15E /* GADYUMIBannerSampleViewController.m */,
+				5BF8725E238556710009B15E /* GADYUMIInterstitialSampleViewController.h */,
+				5BF87260238556720009B15E /* GADYUMIInterstitialSampleViewController.m */,
+				5BF87261238556720009B15E /* GADYUMIRewardVideoSampleViewController.h */,
+				5BF87263238556720009B15E /* GADYUMIRewardVideoSampleViewController.m */,
 				6D26991A230AA10300BD1548 /* Systems */,
 				6D2698E8230A98A400BD1548 /* Main.storyboard */,
 				6D2698EE230A98A700BD1548 /* Assets.xcassets */,
@@ -180,41 +171,6 @@
 			path = "AdMobAdapter-YumiAd-iOSUITests";
 			sourceTree = "<group>";
 		};
-		6D269917230AA10300BD1548 /* Banner */ = {
-			isa = PBXGroup;
-			children = (
-				6D269927230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.h */,
-				6D269928230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.m */,
-				6D26992A230AAD0600BD1548 /* GADYUMICustomEventBanner.h */,
-				6D26992B230AAD0600BD1548 /* GADYUMICustomEventBanner.m */,
-			);
-			path = Banner;
-			sourceTree = "<group>";
-		};
-		6D269918230AA10300BD1548 /* Reward Video */ = {
-			isa = PBXGroup;
-			children = (
-				6D2699DB230BD94D00BD1548 /* GADYUMIRewardVideoSampleViewController.h */,
-				6D2699DC230BD94D00BD1548 /* GADYUMIRewardVideoSampleViewController.m */,
-				6D269A32230BE08000BD1548 /* GADYUMICustomEventRewardVideo.h */,
-				6D269A33230BE08000BD1548 /* GADYUMICustomEventRewardVideo.m */,
-				6D269ADD230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.h */,
-				6D269ADE230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.m */,
-			);
-			path = "Reward Video";
-			sourceTree = "<group>";
-		};
-		6D269919230AA10300BD1548 /* Interstitial */ = {
-			isa = PBXGroup;
-			children = (
-				6D269981230BC82E00BD1548 /* GADYUMIInterstitialSampleViewController.h */,
-				6D269982230BC82E00BD1548 /* GADYUMIInterstitialSampleViewController.m */,
-				6D269984230BC84F00BD1548 /* GADYUMICustomEventInterstitial.h */,
-				6D269985230BC84F00BD1548 /* GADYUMICustomEventInterstitial.m */,
-			);
-			path = Interstitial;
-			sourceTree = "<group>";
-		};
 		6D26991A230AA10300BD1548 /* Systems */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,8 +193,8 @@
 				6D2698DB230A98A400BD1548 /* Sources */,
 				6D2698DC230A98A400BD1548 /* Frameworks */,
 				6D2698DD230A98A400BD1548 /* Resources */,
-				91B0C31A4EBF0F1FC80F30D4 /* [CP] Embed Pods Frameworks */,
-				EDEC8D4A891F00ACAC7656D7 /* [CP] Copy Pods Resources */,
+				7C6E0ED0552EEBC5DA1493A0 /* [CP] Embed Pods Frameworks */,
+				8092F621C8871FF6EC752E2F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -356,7 +312,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		91B0C31A4EBF0F1FC80F30D4 /* [CP] Embed Pods Frameworks */ = {
+		7C6E0ED0552EEBC5DA1493A0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,6 +327,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8092F621C8871FF6EC752E2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ACF2D1921EC52DCAEE5550C8 /* [CP] Check Pods Manifest.lock */ = {
@@ -395,23 +368,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EDEC8D4A891F00ACAC7656D7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -419,16 +375,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D269986230BC84F00BD1548 /* GADYUMICustomEventInterstitial.m in Sources */,
-				6D26992C230AAD0600BD1548 /* GADYUMICustomEventBanner.m in Sources */,
+				5BF87266238556720009B15E /* GADYUMIRewardVideoSampleViewController.m in Sources */,
 				6D269925230AA11600BD1548 /* GADYUMIAppDelegate.m in Sources */,
-				6D269ADF230D1CA800BD1548 /* GADYUMICustomEventRewardBasedVideo.m in Sources */,
-				6D269983230BC82E00BD1548 /* GADYUMIInterstitialSampleViewController.m in Sources */,
 				6D269926230AA11600BD1548 /* GADYUMIViewController.m in Sources */,
+				5BF87264238556720009B15E /* GADYUMIInterstitialSampleViewController.m in Sources */,
+				5BF87265238556720009B15E /* GADYUMIBannerSampleViewController.m in Sources */,
 				6D2698ED230A98A400BD1548 /* AdMobAdapter_YumiAd_iOS.xcdatamodeld in Sources */,
-				6D2699DD230BD94D00BD1548 /* GADYUMIRewardVideoSampleViewController.m in Sources */,
-				6D269A34230BE08000BD1548 /* GADYUMICustomEventRewardVideo.m in Sources */,
-				6D269929230AA5ED00BD1548 /* GADYUMIBannerSampleViewController.m in Sources */,
 				6D2698F5230A98A700BD1548 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,20 +553,21 @@
 			baseConfigurationReference = 13B090FB1F142AEF128128B1 /* Pods-AdMobAdapter-YumiAd-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 20190919;
+				CURRENT_PROJECT_VERSION = 2019121201;
 				DEVELOPMENT_TEAM = L5UE3EGW93;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "AdMobAdapter-YumiAd-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 4.5.0.000;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.popstar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = Dis;
+				PROVISIONING_PROFILE_SPECIFIER = "DevZplay*";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -626,18 +579,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 20190919;
+				CURRENT_PROJECT_VERSION = 2019121201;
 				DEVELOPMENT_TEAM = L5UE3EGW93;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "AdMobAdapter-YumiAd-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 4.5.0.000;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zplay.popstar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = Dis;
+				PROVISIONING_PROFILE_SPECIFIER = "Dis-zplay*";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

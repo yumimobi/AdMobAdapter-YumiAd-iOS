@@ -26,7 +26,7 @@
 
 - (IBAction)handleLoadAd:(UIButton *)sender {
     
-    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-9636835407493045/5476486566"];
+    self.interstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ca-app-pub-9454875840803246/1280960728"];
     self.interstitial.delegate = self;
     
     GADRequest *request = [[GADRequest  alloc] init];
