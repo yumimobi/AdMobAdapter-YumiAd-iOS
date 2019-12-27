@@ -15,8 +15,7 @@
 #### CocoaPods (preferred)
 The simplest way to import the SDK into an iOS project is to use [CocoaPods](https://guides.cocoapods.org/using/getting-started). Open your project's Podfile and add this line to your app's target:
 ```ruby
- pod 'YumiAdSDK'
- pod 'Google-Mobile-Ads-SDK'
+pod 'GoogleMobileAdsMediationYumiAds'
 ```
 Then from the command line run:
 ```
