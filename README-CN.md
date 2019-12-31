@@ -31,16 +31,16 @@ YumiAdSDK 手动接入 [参考文档](https://github.com/yumimobi/YumiAdSDKDemo-
 ### 1.3 添加 Yumi Adapters
 将以下文件添加到工程里面
 #### 1.3.1 Banner Adapter
-[GADYUMICustomEventBanner.h](https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS/blob/master/AdMobAdapter-YumiAd-iOS/Banner/GADYUMICustomEventBanner.h)<br>
-[GADYUMICustomEventBanner.m](https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS/blob/master/AdMobAdapter-YumiAd-iOS/Banner/GADYUMICustomEventBanner.m)
+[GADYUMICustomEventBanner.h](https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS/blob/master/AdMobAdapter-YumiAd-iOS/GoogleAdapters/Banner/GADYUMICustomEventBanner.h)<br>
+[GADYUMICustomEventBanner.m](https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS/blob/master/AdMobAdapter-YumiAd-iOS/GoogleAdapters/Banner/GADYUMICustomEventBanner.m)
 
 #### 1.3.1 Interstitial Adapter
-[GADYUMICustomEventInterstitial.h](https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS/blob/master/AdMobAdapter-YumiAd-iOS/Interstitial/GADYUMICustomEventInterstitial.h)<br>
-[GADYUMICustomEventInterstitial.m](https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS/blob/master/AdMobAdapter-YumiAd-iOS/Interstitial/GADYUMICustomEventInterstitial.m)
+[GADYUMICustomEventInterstitial.h](https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS/blob/master/AdMobAdapter-YumiAd-iOS/GoogleAdapters/Interstitial/GADYUMICustomEventInterstitial.h)<br>
+[GADYUMICustomEventInterstitial.m](https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS/blob/master/AdMobAdapter-YumiAd-iOS/GoogleAdapters/Interstitial/GADYUMICustomEventInterstitial.m)
 
 #### 1.3.1 Reward Video Adapter
-[GADYUMICustomEventRewardVideo.h](https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS/blob/master/AdMobAdapter-YumiAd-iOS/Reward%20Video/GADYUMICustomEventRewardVideo.h)<br>
-[GADYUMICustomEventRewardVideo.m](https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS/blob/master/AdMobAdapter-YumiAd-iOS/Reward%20Video/GADYUMICustomEventRewardVideo.m)
+[GADYUMICustomEventRewardVideo.h](https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS/blob/master/AdMobAdapter-YumiAd-iOS/GoogleAdapters/Reward%20Video/GADYUMICustomEventRewardVideo.h)<br>
+[GADYUMICustomEventRewardVideo.m](https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS/blob/master/AdMobAdapter-YumiAd-iOS/GoogleAdapters/Reward%20Video/GADYUMICustomEventRewardVideo.m)
 
 
 ## 2  在 [AdMob 平台](https://apps.admob.com/v2/home)添加 YumiAd 广告源
