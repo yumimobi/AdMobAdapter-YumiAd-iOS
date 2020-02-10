@@ -87,20 +87,20 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
-  - YumiAdapterBytedance (4.5.1.100):
+  - YumiAdAdapterAdmob (4.5.1):
+    - Google-Mobile-Ads-SDK
+    - YumiAdSDK (= 4.5.1.100)
+  - YumiAdAdapterBytedance (4.5.1):
     - YumiAdSDK (~> 4.5.1.100)
     - YumiBytedanceAds (= 2.7.5.2)
   - YumiAdSDK (4.5.1.100)
-  - YumiAdSDKAdapterAdmob (4.5.1.100):
-    - Google-Mobile-Ads-SDK
-    - YumiAdSDK (= 4.5.1.100)
   - YumiBytedanceAds (2.7.5.2)
 
 DEPENDENCIES:
   - GoogleMobileAdsMediationTestSuite (= 1.0.0)
   - GoogleMobileAdsMediationYumiAds (= 4.5.1.100)
-  - YumiAdapterBytedance (= 4.5.1.100)
-  - YumiAdSDKAdapterAdmob (= 4.5.1.100)
+  - YumiAdAdapterAdmob (= 4.5.1)
+  - YumiAdAdapterBytedance (= 4.5.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -115,9 +115,9 @@ SPEC REPOS:
     - YumiBytedanceAds
   https://github.com/yumimobi/Specs.git:
     - GoogleMobileAdsMediationYumiAds
-    - YumiAdapterBytedance
+    - YumiAdAdapterAdmob
+    - YumiAdAdapterBytedance
     - YumiAdSDK
-    - YumiAdSDKAdapterAdmob
 
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 09d1c182f144b456fce626f9234ab4d35397ea10
@@ -129,11 +129,11 @@ SPEC CHECKSUMS:
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
-  YumiAdapterBytedance: fc8c873d48988b0e58a94a0137e62060d41c39c9
-  YumiAdSDK: 122b44d462567c4524633983ea5ab98d8f7bd17d
-  YumiAdSDKAdapterAdmob: 435f8db7726ee2f67867233349a96a7e47ca1f4d
+  YumiAdAdapterAdmob: c61d85e4895aa5f6f83ce50db4fb490dade5a0f0
+  YumiAdAdapterBytedance: 33f9441269eab48d030d3cd45fe680e3043d217f
+  YumiAdSDK: bcdf776309398054e37a39fc7bc35631ebf9fdf8
   YumiBytedanceAds: 70d9fd9051b8ef81fca1df39b025a357766989a8
 
-PODFILE CHECKSUM: 116be966dd1a1128783cf26dfbf211bbfd63a24e
+PODFILE CHECKSUM: 0674f0ee40b0d8b8bb196126cf64f57b6e99ea85
 
 COCOAPODS: 1.8.4
