@@ -39,7 +39,7 @@
     if (self.interstitial.isReady) {
         [self.interstitial presentFromRootViewController:self];
     }else {
-        [self addLog:@"Interstitial is`t ready"];
+        [self addLog:@"Interstitial isn't ready"];
     }
 }
 
