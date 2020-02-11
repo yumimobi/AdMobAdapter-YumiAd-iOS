@@ -1,4 +1,12 @@
 PODS:
+  - AppCenter (1.2.0):
+    - AppCenter/Analytics (= 1.2.0)
+    - AppCenter/Crashes (= 1.2.0)
+  - AppCenter/Analytics (1.2.0):
+    - AppCenter/Core
+  - AppCenter/Core (1.2.0)
+  - AppCenter/Crashes (1.2.0):
+    - AppCenter/Core
   - Google-Mobile-Ads-SDK (7.55.0):
     - GoogleAppMeasurement (~> 6.0)
   - GoogleAppMeasurement (6.2.2):
@@ -97,12 +105,14 @@ PODS:
   - YumiGDT (4.11.3)
 
 DEPENDENCIES:
+  - AppCenter
   - GoogleMobileAdsMediationTestSuite (= 1.0.0)
   - GoogleMobileAdsMediationYumiAds (= 4.5.1.400)
   - YumiAdAdapterAdmob (= 4.5.1.400)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - AppCenter
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleMobileAdsMediationTestSuite
@@ -119,6 +129,7 @@ SPEC REPOS:
     - YumiAdSDK
 
 SPEC CHECKSUMS:
+  AppCenter: d0b68b2a7a87ac0aed78e66f36d87fd321d0a29c
   Google-Mobile-Ads-SDK: 09d1c182f144b456fce626f9234ab4d35397ea10
   GoogleAppMeasurement: d0560d915abf15e692e8538ba1d58442217b6aff
   GoogleMobileAdsMediationTestSuite: 5fa71a97dd0be6e45a98d12ffd78ff0829051cd6
@@ -133,6 +144,6 @@ SPEC CHECKSUMS:
   YumiBytedanceAds: 70d9fd9051b8ef81fca1df39b025a357766989a8
   YumiGDT: 26de8b0ebd5e546f44b7367af6ccf44a380c9f47
 
-PODFILE CHECKSUM: 9353e606e888b47e87de8a2becb8a39fb296761a
+PODFILE CHECKSUM: d612dbb6cf10c27da27579312a7493e5c8f20e5f
 
 COCOAPODS: 1.8.4

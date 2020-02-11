@@ -9,5 +9,5 @@ target 'AdMobAdapter-YumiAd-iOS' do
   pod 'GoogleMobileAdsMediationYumiAds', '4.5.1.400'
   pod 'YumiAdAdapterAdmob', '4.5.1.400'
   pod 'GoogleMobileAdsMediationTestSuite', '1.0.0'
-  
+  pod 'AppCenter'
 end
