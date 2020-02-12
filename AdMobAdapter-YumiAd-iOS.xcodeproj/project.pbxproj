@@ -193,8 +193,8 @@
 				6D2698DB230A98A400BD1548 /* Sources */,
 				6D2698DC230A98A400BD1548 /* Frameworks */,
 				6D2698DD230A98A400BD1548 /* Resources */,
-				7C6E0ED0552EEBC5DA1493A0 /* [CP] Embed Pods Frameworks */,
-				8092F621C8871FF6EC752E2F /* [CP] Copy Pods Resources */,
+				21C14D5E41066763432A0811 /* [CP] Embed Pods Frameworks */,
+				6A59FAD49897186C528321FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,7 +312,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7C6E0ED0552EEBC5DA1493A0 /* [CP] Embed Pods Frameworks */ = {
+		21C14D5E41066763432A0811 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,7 +329,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdMobAdapter-YumiAd-iOS/Pods-AdMobAdapter-YumiAd-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8092F621C8871FF6EC752E2F /* [CP] Copy Pods Resources */ = {
+		6A59FAD49897186C528321FF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
