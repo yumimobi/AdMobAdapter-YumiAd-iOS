@@ -8,6 +8,9 @@
 
 #import "GADYUMIAppDelegate.h"
 #import <GoogleMobileAds/GADMobileAds.h>
+@import AppCenter;
+@import AppCenterAnalytics;
+@import AppCenterCrashes;
 
 @interface GADYUMIAppDelegate ()
 
@@ -18,6 +21,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [MSAppCenter start:@"63146557-6a53-4767-9821-b56323dc3cc3" withServices:@[
+      [MSAnalytics class],
+      [MSCrashes class]
+    ]];
     
     [[GADMobileAds sharedInstance] startWithCompletionHandler:^(GADInitializationStatus * _Nonnull status) {
         NSLog(@"-----status = %@",status.adapterStatusesByClassName);

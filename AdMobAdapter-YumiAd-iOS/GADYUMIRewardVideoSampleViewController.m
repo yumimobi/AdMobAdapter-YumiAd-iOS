@@ -47,7 +47,7 @@
     if (self.rewardedAd.isReady) {
         [self.rewardedAd presentFromRootViewController:self delegate:self];
     }else{
-        [self addLog:@"reward video is`t ready"];
+        [self addLog:@"reward video isn't ready"];
     }
 }
 
