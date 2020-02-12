@@ -116,34 +116,33 @@ SPEC REPOS:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleMobileAdsMediationTestSuite
+    - GoogleMobileAdsMediationYumiAds
     - GoogleUtilities
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
     - nanopb
-    - YumiBytedanceAds
-    - YumiGDT
-  https://github.com/yumimobi/Specs.git:
-    - GoogleMobileAdsMediationYumiAds
     - YumiAdAdapterAdmob
     - YumiAdSDK
+    - YumiBytedanceAds
+    - YumiGDT
 
 SPEC CHECKSUMS:
   AppCenter: d0b68b2a7a87ac0aed78e66f36d87fd321d0a29c
   Google-Mobile-Ads-SDK: 09d1c182f144b456fce626f9234ab4d35397ea10
   GoogleAppMeasurement: d0560d915abf15e692e8538ba1d58442217b6aff
   GoogleMobileAdsMediationTestSuite: 5fa71a97dd0be6e45a98d12ffd78ff0829051cd6
-  GoogleMobileAdsMediationYumiAds: 4b636742f9a003c046dbbed24146e4b7b88c82b9
+  GoogleMobileAdsMediationYumiAds: bad50553d541e2e44442d027fb303215c72d0a30
   GoogleUtilities: 06eb53bb579efe7099152735900dd04bf09e7275
   MaterialComponents: 1aef341d47fbaed37ddb5163a01af94cb6da8506
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
-  YumiAdAdapterAdmob: 10617b9b541bbe9e11b2b285f2f48a03a2ab8cd5
-  YumiAdSDK: f7a3e1527f3c475ac609264bfebae7cccdd04a46
+  YumiAdAdapterAdmob: 8b13d2783c8e32f5b08900d8b277e4cb336463c2
+  YumiAdSDK: 36c941d1a30e22dcf6b7398965ae5c64ef54a666
   YumiBytedanceAds: 70d9fd9051b8ef81fca1df39b025a357766989a8
   YumiGDT: 26de8b0ebd5e546f44b7367af6ccf44a380c9f47
 
-PODFILE CHECKSUM: d612dbb6cf10c27da27579312a7493e5c8f20e5f
+PODFILE CHECKSUM: d4010ec9a4109e4fefa5def6891c64ba10268545
 
 COCOAPODS: 1.8.4
