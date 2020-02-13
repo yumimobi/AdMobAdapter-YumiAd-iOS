@@ -7,8 +7,8 @@
 //
 
 #import "GADYUMICustomEventBanner.h"
-#import <YumiAdSDK/YumiMediationBannerView.h>
-#import <YumiAdSDK/YumiTool.h>
+#import <YumiMediationSDK/YumiMediationBannerView.h>
+#import <YumiMediationSDK/YumiTool.h>
 
 @interface GADYUMICustomEventBanner ()<YumiMediationBannerViewDelegate>
 
