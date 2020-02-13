@@ -62,10 +62,8 @@ static NSString *adapterVersion = @"1.2.0";
     
     self.adLoadCompletionHandler = completionHandler;
     
-    self.rewardVideo = [YumiMediationVideo sharedInstance];
+    self.rewardVideo = [[YumiMediationVideo alloc] initByOtherMediation];
     self.rewardVideo.delegate = self;
-    // set coreLogicInstance state is init
-    [[self.rewardVideo valueForKey:@"coreLogicInstance"] setValue:@(0) forKey:@"state"];
     
     [self.rewardVideo loadAdWithPlacementID:placementId channelID:channelId versionID:versionId];
 }
