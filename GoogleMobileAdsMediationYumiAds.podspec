@@ -13,4 +13,8 @@ Pod::Spec.new do |s|
   s.dependency 'YumiMediationAdapterBytedance', '4.5.1'
   s.dependency 'Google-Mobile-Ads-SDK'
   s.static_framework = true
+  valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
+  s.xcconfig = { 
+    'VALID_ARCHS' =>  valid_archs.join(' '),
+  }
 end
