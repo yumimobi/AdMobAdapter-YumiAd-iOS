@@ -31,10 +31,8 @@
     NSString *placementId = paramterDict[@"placementId"];
     NSString *channelId = paramterDict[@"channelId"];
     NSString *versionId = paramterDict[@"versionId"];
-    self.interstitial = [[YumiMediationInterstitial alloc] initWithPlacementID:placementId channelID:channelId versionID:versionId];
+    self.interstitial = [[YumiMediationInterstitial alloc] initWithPlacementID:placementId channelID:channelId versionID:versionId byOtherMediation:YES];
     self.interstitial.delegate = self;
-    self.interstitial.initByOtherMediation = YES;
-    
 }
 
 - (void)presentFromRootViewController:(nonnull UIViewController *)rootViewController {
