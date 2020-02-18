@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
   s.source = {:git => 'https://github.com/yumimobi/AdMobAdapter-YumiAd-iOS.git', :tag => s.version.to_s}
   s.source_files = 'AdMobAdapter-YumiAd-iOS/GoogleAdapters/**/*.{h,m}'
   s.ios.deployment_target = '8.0'
-  s.dependency 'YumiMediationAdapters/GDT', '4.5.1'
-  s.dependency 'YumiMediationAdapterBytedance', '4.5.1'
+  s.dependency 'YumiAdSDK', '4.5.1.000'
   s.dependency 'Google-Mobile-Ads-SDK'
   s.static_framework = true
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
