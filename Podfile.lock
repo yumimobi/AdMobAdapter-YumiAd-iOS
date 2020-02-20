@@ -20,9 +20,9 @@ PODS:
     - MaterialComponents/Cards (~> 76.0)
     - MaterialComponents/Dialogs (~> 76.0)
     - MaterialComponents/Tabs (~> 76.0)
-  - GoogleMobileAdsMediationYumiAds (4.5.1.500):
+  - GoogleMobileAdsMediationYumiAds (4.5.1.000):
     - Google-Mobile-Ads-SDK
-    - YumiAdSDK (= 4.5.1.500)
+    - YumiAdSDK (~> 4.5.1.000)
   - GoogleUtilities/AppDelegateSwizzler (6.5.1):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -95,7 +95,7 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
-  - YumiAdSDK (4.5.1.500):
+  - YumiAdSDK (4.5.1.000):
     - YumiMediationAdapterBytedance (= 4.5.1)
     - YumiMediationSDK (= 4.5.1)
   - YumiBytedanceAds (2.7.5.2)
@@ -107,8 +107,8 @@ PODS:
 DEPENDENCIES:
   - AppCenter
   - GoogleMobileAdsMediationTestSuite (= 1.0.0)
-  - GoogleMobileAdsMediationYumiAds (= 4.5.1.500)
-  - YumiAdSDK (= 4.5.1.500)
+  - GoogleMobileAdsMediationYumiAds (= 4.5.1.000)
+  - YumiAdSDK (= 4.5.1.000)
 
 SPEC REPOS:
   trunk:
@@ -132,17 +132,17 @@ SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: f206aff290f26fde422495c6cd187e50efbed57e
   GoogleAppMeasurement: d0560d915abf15e692e8538ba1d58442217b6aff
   GoogleMobileAdsMediationTestSuite: 5fa71a97dd0be6e45a98d12ffd78ff0829051cd6
-  GoogleMobileAdsMediationYumiAds: aea2831285b7fb543e3e318597a27ab340c9da03
+  GoogleMobileAdsMediationYumiAds: bcae14d0822c6438858cf3296914fb43dc8c7519
   GoogleUtilities: 06eb53bb579efe7099152735900dd04bf09e7275
   MaterialComponents: 1aef341d47fbaed37ddb5163a01af94cb6da8506
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
-  YumiAdSDK: 6a5261dacb9e2fd7a795eca13170b9d2462bcb7f
+  YumiAdSDK: 963a32c86f1d306425db176a5052725fa78cc717
   YumiBytedanceAds: 70d9fd9051b8ef81fca1df39b025a357766989a8
   YumiMediationAdapterBytedance: 30582359fb49b137eb093dad1068631c745e0f8f
   YumiMediationSDK: 7c1a46b1a2f07570e01966ae2c340abd111e621e
 
-PODFILE CHECKSUM: ddb62b780db20bae5d45ca90794a5f7758be65da
+PODFILE CHECKSUM: 8ef4c69793fa34ba6f9832ceba0affda0b06a3cb
 
 COCOAPODS: 1.8.4
