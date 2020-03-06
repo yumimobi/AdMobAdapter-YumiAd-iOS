@@ -1,6 +1,5 @@
 # Uncomment the next line to define a global platform for your project
 source 'https://cdn.cocoapods.org/'
-source 'https://github.com/yumimobi/Specs'
 install! 'cocoapods', :deterministic_uuids => false
 platform :ios, '8.0'
 
