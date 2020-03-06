@@ -1,14 +1,16 @@
 
-- [1 接入 YumiAd SDK 和 AdMob SDK](#1-接入-yumiad-sdk-和-admob-sdk)
-    - [1.1 导入 YumiAd SDK 和 Admob SDK](#11-导入-yumiad-sdk-和-admob-sdk)
-        - [CocoaPods （首选）](#cocoapods-首选)
-        - [手动下载](#手动下载)
-    - [1.3 添加 Yumi Adapters](#13-添加-yumi-adapters)
-        - [1.3.1 Banner Adapter](#131-banner-adapter)
-        - [1.3.1 Interstitial Adapter](#131-interstitial-adapter)
-        - [1.3.1 Reward Video Adapter](#131-reward-video-adapter)
-- [2 在 AdMob 平台 添加 YumiAd 广告源](#2-%e5%9c%a8-admob-%e5%b9%b3%e5%8f%b0%e6%b7%bb%e5%8a%a0-yumiad-%e5%b9%bf%e5%91%8a%e6%ba%90)
-- [3 测试 ID](#3-测试-id)
+- [1 接入 YumiAd SDK 和 AdMob SDK](#1-%e6%8e%a5%e5%85%a5-yumiad-sdk-%e5%92%8c-admob-sdk)
+  - [1.1 导入 YumiAd SDK 和 Admob SDK](#11-%e5%af%bc%e5%85%a5-yumiad-sdk-%e5%92%8c-admob-sdk)
+    - [CocoaPods （首选）](#cocoapods-%e9%a6%96%e9%80%89)
+    - [手动下载](#%e6%89%8b%e5%8a%a8%e4%b8%8b%e8%bd%bd)
+  - [1.3 添加 Yumi Adapters](#13-%e6%b7%bb%e5%8a%a0-yumi-adapters)
+    - [1.3.1 Banner Adapter](#131-banner-adapter)
+    - [1.3.1 Interstitial Adapter](#131-interstitial-adapter)
+    - [1.3.1 Reward Video Adapter](#131-reward-video-adapter)
+- [2  在 AdMob 平台添加 YumiAd 广告源](#2-%e5%9c%a8-admob-%e5%b9%b3%e5%8f%b0%e6%b7%bb%e5%8a%a0-yumiad-%e5%b9%bf%e5%91%8a%e6%ba%90)
+- [3 GDPR](#3-gdpr)
+  - [设置 GDPR](#%e8%ae%be%e7%bd%ae-gdpr)
+- [4 测试 ID](#4-%e6%b5%8b%e8%af%95-id)
 
 
 ## 1 接入 YumiAd SDK 和 AdMob SDK
@@ -91,7 +93,26 @@ Parameter 中需填写您在 YumiAd 申请的 slotId，点击 "DONE" 完成 Yumi
 
 ![image](images/08.png)
 
-## 3 测试 ID
+## 3 GDPR
+本文件是为遵守欧洲联盟的一般数据保护条例(GDPR)而提供的。 自 YumiSDK 4.1.0 起，如果您正在收集用户的信息，您可以使用下面提供的api将此信息通知给 YumiSDK。 更多信息请查看我们的官网。
+
+### 设置 GDPR
+```
+typedef enum : NSUInteger {
+    /// The user has granted consent for personalized ads.
+    YumiMediationConsentStatusPersonalized,
+    /// The user has granted consent for non-personalized ads.
+    YumiMediationConsentStatusNonPersonalized,
+    /// The user has neither granted nor declined consent for personalized or non-personalized ads.
+    YumiMediationConsentStatusUnknown,
+} YumiMediationConsentStatus;
+```
+```
+// Your user's consent. In this case, the user has given consent to store and process personal information.
+[[YumiMediationGDPRManager sharedGDPRManager] updateNetworksConsentStatus:YumiMediationConsentStatusPersonalized];
+```
+
+## 4 测试 ID
 
 您在测试中可使用如下 ID 进行测试，测试ID不会产生收益，应用上线时请使用正式 ID。
 
