@@ -8,6 +8,7 @@
 
 #import "GADYUMIViewController.h"
 #import <GoogleMobileAdsMediationTestSuite/GoogleMobileAdsMediationTestSuite.h>
+#import <YumiMediationSDK/YumiMediationGDPRManager.h>
 
 @interface GADYUMIViewController ()
 
@@ -25,5 +26,17 @@
                                                delegate:nil];
 }
 
+
+- (IBAction)setYumiGDPRPersonlized:(id)sender {
+    [[YumiMediationGDPRManager sharedGDPRManager] updateNetworksConsentStatus:YumiMediationConsentStatusPersonalized];
+}
+
+- (IBAction)setYumiGDPRNonPersonlized:(id)sender {
+    [[YumiMediationGDPRManager sharedGDPRManager] updateNetworksConsentStatus:YumiMediationConsentStatusNonPersonalized];
+}
+
+- (IBAction)setYumiGDPRUnknow:(id)sender {
+    [[YumiMediationGDPRManager sharedGDPRManager] updateNetworksConsentStatus:YumiMediationConsentStatusUnknown];
+}
 
 @end
