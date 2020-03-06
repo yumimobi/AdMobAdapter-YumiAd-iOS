@@ -1,14 +1,16 @@
 
 - [1 Import YumiAd SDK and AdMob SDK](#1-import-yumiad-sdk-and-admob-sdk)
-    - [1.1 Import YumiAd SDK and AdMob SDK](#11-import-yumiad-sdk-and-admob-sdk)
-        - [CocoaPods (preferred)](#cocoapods-preferred)
-        - [Manual download](#manual-download)
-    - [1.3 Import the Yumi Adapters](#13-import-the-yumi-adapters)
-        - [1.3.1 Banner Adapter](#131-banner-adapter)
-        - [1.3.1 Interstitial Adapter](#131-interstitial-adapter)
-        - [1.3.1 Reward Video Adapter](#131-reward-video-adapter)
-- [2  Add YumiAd source into AdMob platform](#2-add-yumiad-source-into-admob-platform)
-- [3 Testing ID](#3-testing-id)
+  - [1.1 Import YumiAd SDK and AdMob SDK](#11-import-yumiad-sdk-and-admob-sdk)
+    - [CocoaPods (preferred)](#cocoapods-preferred)
+    - [Manual download](#manual-download)
+  - [1.3 Import the Yumi Adapters](#13-import-the-yumi-adapters)
+    - [1.3.1 Banner Adapter](#131-banner-adapter)
+    - [1.3.1 Interstitial Adapter](#131-interstitial-adapter)
+    - [1.3.1 Reward Video Adapter](#131-reward-video-adapter)
+- [2 Add YumiAd source into AdMob platform](#2-add-yumiad-source-into-admob-platform)
+- [3 GDPR](#3-gdpr)
+  - [Set GDPR](#set-gdpr)
+- [4 Testing ID](#4-testing-id)
 
 ## 1 Import YumiAd SDK and AdMob SDK
 ### 1.1 Import YumiAd SDK and AdMob SDK
@@ -86,7 +88,26 @@ In the test phase, you can replace **your_placement_id** with **test id** and ch
 
 ![image](images/08.png)
 
-## 3 Testing ID
+## 3 GDPR
+This documentation is provided for compliance with the European Union's General Data Protection Regulation (GDPR). If you are collecting consent from your users, you can make use of APIs discussed below to inform YumiMediationSDK and some downstream consumers of this information. Get more information, please visit our official website.
+
+### Set GDPR
+```
+typedef enum : NSUInteger {
+    /// The user has granted consent for personalized ads.
+    YumiMediationConsentStatusPersonalized,
+    /// The user has granted consent for non-personalized ads.
+    YumiMediationConsentStatusNonPersonalized,
+    /// The user has neither granted nor declined consent for personalized or non-personalized ads.
+    YumiMediationConsentStatusUnknown,
+} YumiMediationConsentStatus;
+```
+
+```
+// Your user's consent. In this case, the user has given consent to store and process personal information.
+[[YumiMediationGDPRManager sharedGDPRManager] updateNetworksConsentStatus:YumiMediationConsentStatusPersonalized];
+```
+## 4 Testing ID
 
 You can use the following ID to test in the test phase, the test ID will not generate revenue, please use your own slotId when the application goes online.
 
